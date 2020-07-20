@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import Login from './Components/Login/LoginContainer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/style.css';
+import AppRouter from './routes/AppRouter'
 
 ReactDOM.render(
-   <Login />,
+   <AppRouter />,
   document.getElementById('root')
 );
 

@@ -1,11 +1,16 @@
 import React from 'react';
 import {Container, Row, Col, Form, FormGroup, Input, Label, Button} from 'reactstrap';
+import Header from '../Header';
 
-const Login = () =>( 
+
+const Login = (props) =>( 
     <Container>
         <Row>
+            <Header />
+        </Row>
+        <Row>
             <Col md="4" className="column">
-                <Form>
+                <Form onSubmit={props.handleLogin}>
                     <FormGroup>
                         <Label for="email">Email</Label>
                         <Input type="email" name="email" id="email" />
@@ -19,6 +24,7 @@ const Login = () =>(
                 </Form>
             </Col>
         </Row>
+        
     </Container> );
 
 
